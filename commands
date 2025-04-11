@@ -1,0 +1,24 @@
+npm install --save-dev "@nomicfoundation/hardhat-ignition@^0.15.0" "@nomicfoundation/ignition-core@^0.15.0"
+npx hardhat --version
+npx hardhat node
+npx hardhat run scripts/deploy.js --network hardhat
+
+
+
+
+
+#front end
+
+npx hardhat node
+npx hardhat run scripts/deploy.js --network hardhat
+python -m http.server 8000
+
+
+netstat -ano | findstr :8545
+taskkill /PID <PID> /F
+
+
+Accounts : 
+
+5 :
+0x9965507D1a55bcC2695C58ba16FB37d819B0A4dc

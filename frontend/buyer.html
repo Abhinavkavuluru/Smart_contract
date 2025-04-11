@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buyer - Make Payment</title>
+    <script src="ethers.js"></script>
+    <script defer src="contract.js"></script>
+</head>
+<body>
+
+    <h2>🛒 Buyer Interface - Make Payment</h2>
+
+    <label>Enter Contract Address:</label>
+    <input type="text" id="contractAddress" required>
+    <button onclick="fetchContractDetails()">🔍 Fetch Details</button>
+
+    <div id="contractDetails"></div>
+    
+    <p id="contractYearsDisplay">📅 Contract Duration: Not Fetched</p>
+
+    <button id="makePaymentBtn" disabled>💰 Make Payment</button>  
+    <button id="orderAcceptedBtn" disabled>✅ Order Accepted</button>  
+
+    <script>
+        // Clear the contract address field on page load
+        window.onload = function () {
+            document.getElementById("contractAddress").value = "";
+        };
+
+        function fetchContractDetails() {
+            // Enable the "Make Payment" button after fetching contract details
+            document.getElementById("makePaymentBtn").disabled = false;
+        }
+
+        document.getElementById("makePaymentBtn").addEventListener("click", function () {
+            alert("✅ Payment initiated successfully!");
+            this.disabled = true; // Disable the Make Payment button
+            document.getElementById("orderAcceptedBtn").disabled = false; // Enable the Order Accepted button
+        });
+
+        document.getElementById("orderAcceptedBtn").addEventListener("click", function () {
+            alert("🎉 Order has been accepted!");
+            this.disabled = true; // Disable the Order Accepted button after clicking
+        });
+    </script>
+
+</body>
+</html>
