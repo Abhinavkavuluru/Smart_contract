@@ -27,7 +27,7 @@ This repository contains the smart contract system and Hardhat setup used in the
 
 ### 1. Clone the Repository
 
-    git clone https://github.com/yourusername/Smart_contract.git
+    git clone https://github.com/Abhinavkavuluru/Smart_contract.git
     cd Smart_contract
 
 ### 2. Install Dependencies
@@ -66,7 +66,7 @@ All transactions are stored on a local Ethereum blockchain using Hardhat.
 
 ## 🔐 Integration with AgriConnect
 
-This repo works as the blockchain backbone for the full-stack [AgriConnect](https://github.com/yourusername/AgriConnect) application.
+This repo works as the blockchain backbone for the full-stack [AgriConnect](https://github.com/Abhinavkavuluru/AgriConnect) application.
 
 Make sure this local node is running before starting the Flask server.
 
